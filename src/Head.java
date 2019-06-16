@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Head {
     private int name;
+    private int numberOfRounds;
     private int height;
     private ArrayList<Head> underHeads = new ArrayList<>();
     private ArrayList<Head> roundHeads = new ArrayList<>();
