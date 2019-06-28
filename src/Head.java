@@ -2,15 +2,19 @@ import java.util.*;
 
 public class Head {
     private int name;
+    private int m =0;
+
     private int numberOfRounds;
     private int height;
     private ArrayList<Head> underHeads = new ArrayList<>();
     private ArrayList<Head> roundHeads = new ArrayList<>();
     private ArrayList<Integer> lines = new ArrayList<>();
     private ArrayList<Integer> minimum = new ArrayList<>();
-    private int m =0;
-    public Head(int name){
+
+
+    public Head(int name) {
         this.name = name;
+
     }
 
     @Override
@@ -42,18 +46,44 @@ public class Head {
         return name;
     }
 
-    public void addLines( int line ) {
-        lines.add(line);
+    public void setM(int m)
+    {
+        this.m = m;
     }
-    public void addUnderHeads( Head underHead ) {
-        underHeads.add(underHead);
+    public int getM() {
+        return m;
     }
 
+    public void setHeight(int height) {
+        this.height = height;
+    }
+    public int getHeight() {
+        return height;
+    }
+
+    public void addUnderHeads(Head underHead ) {
+        underHeads.add(underHead);
+    }
     public ArrayList<Head> getUnderHeads() {
         return underHeads;
     }
 
-    public ArrayList<Integer> findHeight(List<Head> heads ) {
+    public void addRoundHeads(Head head){
+        roundHeads.add(head);
+    }
+    public ArrayList<Head> getRoundHeads() {
+        return roundHeads;
+    }
+
+    public void addLines( int line ) {
+        lines.add(line);
+    }
+
+    public ArrayList<Integer> getMinimum() {
+        return minimum;
+    }
+
+    public void findHeight( List<Head> heads ) {
         Stack<Head> sHeads = new Stack<>();
         Head curHead = this;
         sHeads.push(curHead);
@@ -64,28 +94,40 @@ public class Head {
         }
         opened[curHead.getName()-1] = true;
         System.out.println("*******************names");
+        this.setM(0);
         while(!isFinished(opened)){
             curHead = sHeads.peek();
             System.out.println(curHead.getName());
             opened[curHead.getName()-1] = true;
-            openHeads(curHead , sHeads,opened);
+            openHeads(curHead , sHeads , opened);
         }
         System.out.println("end");
         for (Head head : heads){
             minimum.add(head.getM());
         }
+        this.setHeight(Integer.MAX_VALUE);
+        for (Integer min :minimum){
 
-        return minimum;
+            if(min == 0) {
+                if (this.underHeads.size() == 0) {
+                     this.setHeight(0);
+                }
+            }
+            if(min <= this.getHeight() && min != 0){
+                this.setHeight(min);
+            }
+
+
+        }
+        for( Head head : heads){
+            head.setM(0);
+            minimum.clear();
+        }
+
 
     }
-    public void addRoundHeads(Head head){
-        roundHeads.add(head);
-    }
 
-    public ArrayList<Head> getRoundHeads() {
-        return roundHeads;
-    }
-    private boolean isFinished(boolean[] openend){
+    private boolean isFinished (boolean[] openend){
         boolean b = true;
         for(int i=0;i<openend.length;i++){
             if(openend[i]==false)
@@ -93,10 +135,13 @@ public class Head {
         }
         return b;
     }
+
     private void openHeads(Head curHead , Stack<Head> sHeads , boolean[] opened){
+
         boolean exist = false ;
+
         for(Head head : curHead.roundHeads){
-            if(opened[head.getName()-1]==false) {
+            if(!opened[head.getName() - 1]) {
                 sHeads.push(head);
                 System.out.println("added: "+ head.getName());
                 exist = true;
@@ -109,15 +154,7 @@ public class Head {
         }
     }
 
-    public ArrayList<Integer> getMinimum() {
-        return minimum;
-    }
 
-    public void setM(int m) {
-        this.m = m;
-    }
 
-    public int getM() {
-        return m;
-    }
+
 }
