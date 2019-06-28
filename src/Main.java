@@ -51,15 +51,9 @@ public class Main {
         }
         System.out.println("*********************minimum");
         for(Head head : heads){
-            if(head.equals(new Head(2))){
-                ArrayList<Integer> minimum = head.findHeight(heads);
-                for(int i = 0;i<minimum.size();i++){
-                    System.out.println(minimum.get(i));
-                }
-            }
+            head.findHeight(heads);
+            System.out.println("height of " + head.getName() + " = " + head.getHeight());
         }
-
-
     }
     private static void addUnderHead ( Head head1 , Head head2 ){
         if( head1.getName() > head2.getName() ){
