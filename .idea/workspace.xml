@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7496ffe4-42be-472f-89bf-e6c43e558cd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/D_Project/Head.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/D_Project/Head.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/D_Project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/D_Project/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Head.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+            <state relative-caret-position="149">
+              <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
               <folding>
                 <element signature="e#263#1208#1" />
                 <element signature="method#addUnderHead#0;class#Main#0" />
@@ -94,7 +91,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561884234258" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561884643812" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hw5-fariborz-endgame-arash99s" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -140,16 +137,23 @@
       <option name="presentableId" value="Default" />
       <updated>1560650507802</updated>
       <workItem from="1560650512141" duration="15433000" />
-      <workItem from="1561790103518" duration="8404000" />
+      <workItem from="1561790103518" duration="8848000" />
     </task>
+    <task id="LOCAL-00001" summary="finding height debugged&#10;up heads added&#10;common upheads found&#10;questions added&#10;extra prints deleted:-)">
+      <created>1561884426061</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561884426061</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23837000" />
+    <option name="totallyTimeSpent" value="24281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -187,6 +191,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finding height debugged&#10;up heads added&#10;common upheads found&#10;questions added&#10;extra prints deleted:-)" />
+    <option name="LAST_COMMIT_MESSAGE" value="finding height debugged&#10;up heads added&#10;common upheads found&#10;questions added&#10;extra prints deleted:-)" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Head.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -203,8 +211,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+        <state relative-caret-position="149">
+          <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
           <folding>
             <element signature="e#263#1208#1" />
             <element signature="method#addUnderHead#0;class#Main#0" />
