@@ -8,6 +8,7 @@ public class Head {
     private int height;
     private ArrayList<Head> underHeads = new ArrayList<>();
     private ArrayList<Head> roundHeads = new ArrayList<>();
+    private ArrayList<Head> upHeads = new ArrayList<>();
     private ArrayList<Integer> lines = new ArrayList<>();
     private ArrayList<Integer> minimum = new ArrayList<>();
 
@@ -68,6 +69,14 @@ public class Head {
         return underHeads;
     }
 
+    public void addUpHead(Head uphead){
+        upHeads.add(uphead);
+    }
+
+    public ArrayList<Head> getUpHeads() {
+        return upHeads;
+    }
+
     public void addRoundHeads(Head head){
         roundHeads.add(head);
     }
@@ -93,27 +102,22 @@ public class Head {
             opened[i] = false;
         }
         opened[curHead.getName()-1] = true;
-        System.out.println("*******************names");
         this.setM(0);
         while(!isFinished(opened)){
             curHead = sHeads.peek();
-            System.out.println(curHead.getName());
+            //System.out.println(curHead.getName());
             opened[curHead.getName()-1] = true;
             openHeads(curHead , sHeads , opened);
         }
-        System.out.println("end");
         for (Head head : heads){
-            minimum.add(head.getM());
+            if(head.underHeads.size()==0){
+                minimum.add(head.getM());
+            }
+
         }
         this.setHeight(Integer.MAX_VALUE);
         for (Integer min :minimum){
-
-            if(min == 0) {
-                if (this.underHeads.size() == 0) {
-                     this.setHeight(0);
-                }
-            }
-            if(min <= this.getHeight() && min != 0){
+            if(min <= this.getHeight()){
                 this.setHeight(min);
             }
 
@@ -143,7 +147,7 @@ public class Head {
         for(Head head : curHead.roundHeads){
             if(!opened[head.getName() - 1]) {
                 sHeads.push(head);
-                System.out.println("added: "+ head.getName());
+                //System.out.println("added: "+ head.getName());
                 exist = true;
                 head.setM(curHead.getM()+1);
             }
