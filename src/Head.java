@@ -12,7 +12,6 @@ public class Head {
     private ArrayList<Integer> lines = new ArrayList<>();
     private ArrayList<Integer> minimum = new ArrayList<>();
 
-
     public Head(int name) {
         this.name = name;
 
@@ -105,7 +104,6 @@ public class Head {
         this.setM(0);
         while(!isFinished(opened)){
             curHead = sHeads.peek();
-            //System.out.println(curHead.getName());
             opened[curHead.getName()-1] = true;
             openHeads(curHead , sHeads , opened);
         }
@@ -157,8 +155,4 @@ public class Head {
             sHeads.pop();
         }
     }
-
-
-
-
 }

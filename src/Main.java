@@ -35,10 +35,16 @@ public class Main {
                 }
             }
 
-            addUnderHead ( head1 , head2 );
+            addUpAndUnderHead( head1 , head2 );
             head1.addRoundHeads(head2);
             head2.addRoundHeads(head1);
 
+        }
+        for (Head head : heads){
+            head.findHeight(heads);
+        }
+        for(Head head : heads){
+            System.out.println(head.getHeight());
         }
 
         int[] answers = new int[q];
@@ -49,11 +55,11 @@ public class Main {
             answers[i]=answer.getName();
         }
         for(int i=0;i<q;i++) {
-            System.out.println("answer is :" + answers[i]);
+            System.out.println(answers[i]);
         }
 
     }
-    private static void addUnderHead ( Head head1 , Head head2 ){
+    private static void addUpAndUnderHead(Head head1 , Head head2 ){
         if( head1.getName() > head2.getName() ){
             head2.addUnderHeads(head1);
             head1.addUpHead(head2);
@@ -96,13 +102,21 @@ public class Main {
                 shared.add(head);
             }
         }
-        Head answer = shared.get(0);
+        Head answerhead = shared.get(shared.size()-1);
         for(Head head : shared){
-            if(answer.getHeight()>=head.getHeight()){
-                answer = head;
+            if(answerhead.getHeight()>head.getHeight()){
+                answerhead = head;
+            }
+            if(answerhead.getHeight() == head.getHeight()){
+                if(head.getName()>answerhead.getName()){
+                    answerhead = head;
+                }
             }
         }
-        return answer;
+        for(Head head : shared){
+            System.out.println(head.getName());
+        }
+        return answerhead;
     }
 
 }
