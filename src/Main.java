@@ -43,9 +43,6 @@ public class Main {
         for (Head head : heads){
             head.findHeight(heads);
         }
-        for(Head head : heads){
-            System.out.println(head.getHeight());
-        }
 
         int[] answers = new int[q];
         for(int i = 0 ; i < q ; i++){
