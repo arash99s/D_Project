@@ -111,7 +111,7 @@ public class Main {
             }
         }
         for(Head head : shared){
-            System.out.println(head.getName());
+            //System.out.println(head.getName());
         }
         return answerhead;
     }

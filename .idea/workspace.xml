@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7496ffe4-42be-472f-89bf-e6c43e558cd7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/D_Project/Head.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/D_Project/Head.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/D_Project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/D_Project/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Head.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,11 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="116" column="45" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
-              <folding>
-                <element signature="method#addUnderHead#0;class#Main#0" />
-              </folding>
+            <state relative-caret-position="304">
+              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -37,16 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Head.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
-              <folding>
-                <element signature="method#equals#0;class#Head#0" />
-                <element signature="method#hashCode#0;class#Head#0" />
-                <element signature="e#1912#1913#0" expanded="true" />
-                <element signature="e#1942#1943#0" expanded="true" />
-                <element signature="method#isFinished#0;class#Head#0" />
-                <element signature="method#openHeads#0;class#Head#0" />
-              </folding>
+            <state relative-caret-position="451">
+              <caret line="104" column="35" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -82,7 +67,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,6 +83,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -154,6 +139,7 @@
       <workItem from="1561790103518" duration="8848000" />
       <workItem from="1561982434396" duration="478000" />
       <workItem from="1562011622001" duration="3590000" />
+      <workItem from="1562088321277" duration="274000" />
     </task>
     <task id="LOCAL-00001" summary="finding height debugged&#10;up heads added&#10;common upheads found&#10;questions added&#10;extra prints deleted:-)">
       <created>1561884426061</created>
@@ -166,12 +152,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28349000" />
+    <option name="totallyTimeSpent" value="28623000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1680" height="974" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25948593" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26344085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -181,7 +168,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3150358" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31444758" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -212,35 +199,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="finding height debugged&#10;up heads added&#10;common upheads found&#10;questions added&#10;extra prints deleted:-)" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/ArrayList.class" />
     <entry file="file://$PROJECT_DIR$/src/Head.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
-          <folding>
-            <element signature="method#equals#0;class#Head#0" />
-            <element signature="method#hashCode#0;class#Head#0" />
-            <element signature="e#1912#1913#0" expanded="true" />
-            <element signature="e#1942#1943#0" expanded="true" />
-            <element signature="method#isFinished#0;class#Head#0" />
-            <element signature="method#openHeads#0;class#Head#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/ArrayList.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4305">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        <state relative-caret-position="451">
+          <caret line="104" column="35" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="116" column="45" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
-          <folding>
-            <element signature="method#addUnderHead#0;class#Main#0" />
-          </folding>
+        <state relative-caret-position="304">
+          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
         </state>
       </provider>
     </entry>
